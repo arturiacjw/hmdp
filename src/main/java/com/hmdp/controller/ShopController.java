@@ -72,7 +72,8 @@ public class ShopController {
             @RequestParam(value = "x", required = false) Double x,
             @RequestParam(value = "y", required = false) Double y
     ) {
-       return shopService.queryShopByType(typeId, current, x, y);
+//       return shopService.queryShopByType(typeId, current, x, y);//x,y有值的情况下，按照
+        return shopService.queryShopByType(typeId,current,null,null);
     }
 
     /**
